@@ -7,7 +7,7 @@
 
 header
 {
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(234.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(234.jpg);
     height:100vh;
     background-size:cover;
     background-position:center;
@@ -93,15 +93,16 @@ h4 {
 
 .firstdiv
 {
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(exam.jpg);
-    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(exam.jpg);
+    height: 110vh;
     background-size: cover;
+    text-decoration:underline;
     background-position: center;
 }
 
 .firstdiv h5 
 {
-        color: #000;
+        color:#000;
         font-size: 50px;
         text-align:center;
         padding-top:300px;
@@ -120,16 +121,15 @@ h4 {
 
 
 
-    .seconddiv h6
-    {
-        color:#fff;
-        font-size: 50px;
-        text-align: center;
-        padding-top: 300px;
-        padding-right:100px;
-        float:right;
-
-    }
+p {
+    width:650px;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top:220%;
+    left: 50%;
+    font-family: 'Gloria Hallelujah', cursive;
+}
 
 
 
@@ -150,4 +150,9 @@ h4 {
         float: right;
         font-family: 'Gloria Hallelujah', cursive;
     }
-
+footer
+{
+    background-color:black;
+    color:white;
+    text-align:center;
+}

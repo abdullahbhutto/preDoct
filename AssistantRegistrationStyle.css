@@ -1,5 +1,5 @@
 ﻿body {
-    background-image: url(27.jpg);
+    background-image: url(28.jpg);
     background-size: cover;
     height: 550px;
     background-position: center;
@@ -9,27 +9,28 @@
 
 
 .parent-div {
-    width: 470px;
-    height: 670px;
+    width: 400px;
+    height: 450px;
     border: 5px solid #000;
     margin: 10px auto;
-    margin-top: 40px;
+    margin-top: 100px;
+    margin-left:350px;
     background: none;
     border-radius: 25px;
 }
 
 h1 {
     color: #000;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 5px;
     text-decoration: underline;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h2 {
-    font-size: 18px;
-    margin-top: 60px;
+    font-size: 15px;
+    margin-top: 20px;
     color: black;
     text-align: center;
     text-decoration: underline;
@@ -42,8 +43,8 @@ h2 {
     width: 350px;
     font-size: 15px;
     position: absolute;
-    top: 30%;
-    left: 50%;
+    top: 28%;
+    margin-left: 200px;
     transform: translate(-50%,-50%);
     color: #000;
 }
@@ -55,7 +56,7 @@ h2 {
         color:white;
         position: absolute;
         font-family: Arial, Helvetica, sans-serif;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
 .textbox {
@@ -71,13 +72,13 @@ h2 {
         background: none;
         border: none;
         outline: none;
-        font-size: 20px;
+        font-size: 18px;
         width: 350px;
         margin: 10px;
     }
 
 ::-webkit-input-placeholder {
-    color: #000;
+    color: #808080;
 }
 
 

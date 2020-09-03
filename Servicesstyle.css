@@ -52,6 +52,7 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
+    text-decoration:underline;
     font-family: 'Rouge Script', cursive;
 }
 
@@ -87,5 +88,6 @@ span {
     color: #ffffff;
     font-size: 2em;
     right: 0;
+    text-decoration:underline;
     width: 100%;
 }
