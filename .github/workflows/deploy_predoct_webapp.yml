@@ -28,5 +28,5 @@ jobs:
       - name: Install surge
         uses: npm install -g surge
       - name: Run Surge
-        uses: surge ./ predoct.surge.sh --token ${{ secrets.SURGE_TOKEN }}.
+        uses: surge ./ predoctfrontend.surge.sh --token ${{ secrets.SURGE_TOKEN }}.
        
