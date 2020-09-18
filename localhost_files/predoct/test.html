@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Password Show or Hide Toggle | CodeLab</title>
+    <link rel="stylesheet" href="teststyle.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <input type="password" placeholder="Enter Password" required>
+      <span class="show-btn"><i class="fas fa-eye"></i></span>
+    </div>
+<script>
+      const passField = document.querySelector("input");
+      const showBtn = document.querySelector("span i");
+      showBtn.onclick = (()=>{
+        if(passField.type === "password"){
+          passField.type = "text";
+          showBtn.classList.add("hide-btn");
+        }else{
+          passField.type = "password";
+          showBtn.classList.remove("hide-btn");
+        }
+      });
+    </script>
+
+  </body>
+</html>
+
+
+<script>
+  const showBtn = document.querySelector("span i");
+  function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+      x.type = "text";
+      showBtn.classList.add("hide-btn");
+    } else {
+      x.type = "password";
+      showBtn.classList.remove("hide-btn");
+    }
+  }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <?php
+session_start();
+
+	// //Connect to database
+    // $servername = "localhost";
+    // $username = "root";		//put your phpmyadmin username.(default is "root")
+    // $password = "";			//if your phpmyadmin has a password put it here.(default is "root")
+    // $dbname = "predoct";
+    
+$db = mysqli_connect('localhost', 'root', '', 'predoct') or die("could not connect to database"); 
+
+$doctorname = "";
+$designation = "";
+$email = "";
+$passwordct = "";
+$passwordctchk = "";
+
+$errors = array();
+
+
+
+$doctorname = mysqli_real_escape_string($db, $_POST["doctorname"]);
+$designation = mysqli_real_escape_string($db, $_POST["designation"]);
+$email = mysqli_real_escape_string($db, $_POST["email"]);
+$passwordct = mysqli_real_escape_string($db, $_POST["passwordct"]);
+$passwordctchk = mysqli_real_escape_string($db, $_POST["passwordctchk"]);
+
+if(empty($doctorname)) array_push($errors, "Name is required");
+if(empty($designation)) array_push($errors, "Designation is required");
+if(empty($email)) array_push($errors, "Email is required");
+if(empty($passwordct)) array_push($errors, "Password is required");
+if(empty($passwordctchk)) array_push($errors, "Confirm Password is required");
+if ($passwordct != $passwordctchk) array_push($errors, "Passwords did not match");
+
+
+//$user_check_query = "SELECT * FROM doctor_login  where email = '$email' LIMIT 1";
+
+//$result = mysqli_query($db, $user_check_query);
+//$user = mysqli_fetch_array($result);
+
+//if($user){
+//    if($user['emai'] === $email){array_push($errors, "Account Alredy Exists");}
+//}
+
+if(count($errors) === 0){
+    $password = md5($passwordct);
+    $query = "INSERT INTO doctor_login (doctorname, designtion, email, passwordct) VALUES ('$doctorname', '$designation', '$email', '$password')";
+
+    mysqli_query($db, $query);
+
+    $_SESSION['doctorname'] = $doctorname;
+    $_SESSION['success'] = "You have successfully registered";
+
+    header('Location: registered.php');
+}
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php
+session_start();
+	//Connect to database
+    $servername = "localhost";
+    $username = "root";		//put your phpmyadmin username.(default is "root")
+    $password = "";			//if your phpmyadmin has a password put it here.(default is "root")
+    $dbname = "predoct";
+    
+	$conn = new mysqli($servername, $username, $password, $dbname);
+ 
+// Check connection
+if($conn === false){
+    die("ERROR: Could not connect. " . $conn->connect_error);
+}
+ 
+// // Escape user inputs for security
+// $doctorname = $conn->real_escape_string($conn, $_POST['doctorname']);
+// $designation = $conn->real_escape_string($conn, $_POST['designation']);
+// $email = $conn->real_escape_string($conn, $_POST['email']);
+// $passwordct = $conn->real_escape_string($conn, $_POST['passwordct']);
+ 
+$doctorname = mysqli_real_escape_string($conn, $_POST["doctorname"]);
+$designation = mysqli_real_escape_string($conn, $_POST["designation"]);
+$email = mysqli_real_escape_string($conn, $_POST["email"]);
+$passwordct = mysqli_real_escape_string($conn, $_POST["passwordct"]);
+
+// Attempt insert query execution
+$sql = "INSERT INTO doctor_login (doctorname, designation, email, passwordct) VALUES ('$doctorname', '$designation', '$email', '$passwordct')";
+if($conn->query($sql) === true){
+    //echo "Records inserted successfully.";
+} else{
+    echo "ERROR: Could not able to execute $sql. " . $conn->error;
+}
+ 
+// Close connection
+$conn->close();
+?>
+
+
+
+
+
+
+
+
+
+
+
+<?php
+session_start();
+
+//Connect to database
+$servername = "localhost";
+$username = "root";		//put your phpmyadmin username.(default is "root")
+$password = "";			//if your phpmyadmin has a password put it here.(default is "root")
+$dbname = "predoct";
+
+$db = mysqli_connect('localhost', 'root', '', 'predoct') or die("could not connect to database"); 
+
+$doctorname = "";
+$designation = "";
+$email = "";
+$passwordct = "";
+$passwordctchk = "";
+
+$errors = array();
+
+
+
+$doctorname = mysqli_real_escape_string($db, $_POST["doctorname"]);
+$designation = mysqli_real_escape_string($db, $_POST["designation"]);
+$email = mysqli_real_escape_string($db, $_POST["email"]);
+$passwordct = mysqli_real_escape_string($db, $_POST["passwordct"]);
+$passwordctchk = mysqli_real_escape_string($db, $_POST["passwordctchk"]);
+
+if(empty($doctorname)) array_push($errors, "Name is required");
+if(empty($designation)) array_push($errors, "Designation is required");
+if(empty($email)) array_push($errors, "Email is required");
+if(empty($passwordct)) array_push($errors, "Password is required");
+if(empty($passwordctchk)) array_push($errors, "Confirm Password is required");
+if ($passwordct != $passwordctchk) array_push($errors, "Passwords did not match");
+
+
+$user_check_query = "SELECT email FROM doctor_login  where email = '$email' LIMIT 1";
+echo '$user_check_query';
+
+$result = mysqli_query($db, $user_check_query);
+$user = mysqli_fetch_array($result);
+
+if($user != 0){
+   if($user['emai'] === $email){array_push($errors, "Account Alredy Exists");}
+}
+
+if(count($errors) === 0){
+$password = md5($passwordct);
+$sql = "INSERT INTO doctor_login (doctorname, designation, email, passwordct) VALUES ('$doctorname', '$designation', '$email', '$password')";
+//$query = "INSERT INTO doctor_login (doctorname, designtion, email, passwordct) VALUES ('$doctorname', '$designation', '$email', '$password')";
+
+mysqli_query($db, $sql);
+
+$_SESSION['doctorname'] = $doctorname;
+$_SESSION['success'] = "You have successfully registered";
+
+header('Location: registered.php');
+}
+
+?>
