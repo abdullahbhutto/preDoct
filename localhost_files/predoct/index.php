@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>predoct</title>
-    <link rel="stylesheet" type="text/css" href="Homestyle.css" />
+    <link rel="stylesheet" type="text/css" href="Indexstyle.css" />
 </head>
 <body>
     <header>
@@ -14,11 +14,11 @@
 
         <div class="main">
             <div class="logo">
-                <a href="Home.html"><h4>preDoct</h4></a>
+                <a href="index.php"><h4>preDoct</h4></a>
             </div>
             <ul>
-                <li class="active"> <a href="#">Home</a> </li>
-                <li> <a href="Services.html">Services</a> </li>
+                <li class="active"> <a href="index.php">Home</a> </li>
+                <li> <a href="Services.php">Services</a> </li>
                 <li> <a href="#">Gallery</a> </li>
                 <li> <a href="#">About</a> </li>
                 <li> <a href="#">Contact</a> </li>

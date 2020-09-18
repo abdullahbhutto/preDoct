@@ -36,7 +36,7 @@ if($conn->query($sql) === true){
     $_SESSION['assistantname'] = $assistantname;
     $_SESSION['success'] = "You have successfully registered";
     
-    header('Location: Patient.php');
+    header('Location: Assistant_login.php');
     
 
 } else{

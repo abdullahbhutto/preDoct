@@ -13,7 +13,7 @@
 
 
 <body>
-    <form action="manage_users.php" method="POST" id="myForm">
+    <form action="manage_doctor.php" method="POST" id="myForm">
     <div class="parent-div">
 
         <h1>NEW REGISTRATION</h1>
@@ -57,7 +57,7 @@
             <br />
             <br />
             <br />
-            <h2>Already have an Account ?<a href="Doctor.php">  Sign In </a></h2>
+            <h2>Already have an Account ?<a href="Doctor_login.php">  Sign In </a></h2>
 
 
 

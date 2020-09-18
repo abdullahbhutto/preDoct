@@ -10,11 +10,11 @@
 
     <div class="main">
         <div class="logo">
-            <a href="Home.html"><h4>preDoct</h4></a>
+            <a href="index.php"><h4>preDoct</h4></a>
         </div>
         <ul>
-            <li> <a href="Home.html">Home</a> </li>
-            <li class="active"> <a href="Services.html">Services</a> </li>
+            <li> <a href="index.php">Home</a> </li>
+            <li class="active"> <a href="Services.php">Services</a> </li>
             <li> <a href="#">Gallery</a> </li>
             <li> <a href="#">About</a> </li>
             <li> <a href="#">Contact</a> </li>
@@ -44,7 +44,7 @@
     <section class="row1">
 
         <div>
-            <a href="AssistantRegistration.html">
+            <a href="AssistantRegistration.php">
                 <div class="category-tile">
                     <img src="patient.jpg" alt="Doctor" height="180" width="180" />
                     <br />

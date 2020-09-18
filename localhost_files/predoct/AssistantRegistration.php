@@ -19,7 +19,7 @@
         <div class="login-box">
 <form action="manage_assistant.php" method="POST" >
             <div class="textbox">
-                <input type="text" placeholder="Assistant Name" name="assistantname" value="">
+                <input type="text" placeholder="Assistant Name" name="assistantname" value="" required>
             </div>
 
             
@@ -27,18 +27,18 @@
             <br />
 
             <div class="textbox">
-                <input type="email" placeholder="Email" name="email" value="">
+                <input type="email" placeholder="Email" name="email" value="" required>
             </div>
             <br />
 
             <div class="textbox">
-                <input type="password" placeholder="Password" name="passwordst" value="">
+                <input type="password" placeholder="Password" name="passwordst" value="" required>
             </div>
 
             <br />
 
             <div class="textbox">
-                <input type="password" placeholder="Confirm Password" name="passwordstchk" value="">
+                <input type="password" placeholder="Confirm Password" name="passwordstchk" value="" required>
             </div>
 
 
@@ -47,7 +47,7 @@
             <br />
             <br />
             <br />
-            <h2>Already have an Account ?<a href="Patient.php">  Sign In </a></h2>
+            <h2>Already have an Account ?<a href="Assistant_login.php">  Sign In </a></h2>
 
 
 

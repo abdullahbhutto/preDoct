@@ -17,7 +17,7 @@ if ($count == 1){
 
 // echo "Login Credentials verified";
 //echo "<script type='text/javascript'>alert('Login Credentials verified')</script>";
-header('Location: Assistant.php');
+header('Location: AssistantUI.php');
 }else{
 //echo "<script type='text/javascript'>alert('Invalid Login Credentials')</script>";
 echo "Invalid Login Credentials";

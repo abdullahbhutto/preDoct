@@ -5,8 +5,8 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Patient Login</title>
-    <link rel="stylesheet" type="text/css" href="Patientstyle.css" />
+    <title>Assistant Login</title>
+    <link rel="stylesheet" type="text/css" href="Assistant_loginstyle.css" />
 </head>
 
 

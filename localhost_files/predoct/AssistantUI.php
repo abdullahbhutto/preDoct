@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <title>Assistant</title>
-    <link rel="stylesheet" type="text/css" href="Assistantstyle.css" />
+    <link rel="stylesheet" type="text/css" href="AssistantUIstyle.css" />
 </head>
 
 <body>
        
-        <h2><a href="Patientform.html">Create New Patient</a></h2>
+        <h2><a href="Patientform.php">Create New Patient</a></h2>
     
     <div class="heading">
 
