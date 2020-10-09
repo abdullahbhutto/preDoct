@@ -26,7 +26,7 @@ jobs:
         with: 
           node-version: 12
       - name: Install Surge
-        uses: npm install -g surge
+        run: npm install -g surge
       - name: Run Surge
-        uses: surge ./ predoct.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./ predoct.surge.sh --token ${{ secrets.SURGE_TOKEN }}
        
